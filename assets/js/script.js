@@ -1,9 +1,8 @@
 
-var endDate = new Date("May 27, 2020 00:00:00").getTime()
+var endDate = new Date("September 15, 2020 00:00:00").getTime()
 
 var x = setInterval(
     function() {
-        
         var now = new Date().getTime();
         var dif = endDate - now;
 
@@ -16,10 +15,10 @@ var x = setInterval(
 
         if (dif >= 0) {
             //if after the end date
-            index.getElementById("days").innerHTML = days;
-            index.getElementById("hours").innerHTML = hours;
-            index.getElementById("minutes").innerHTML = minutes;
-            index.getElementById("seconds").innerHTML = seconds;
+            document.getElementById("days").innerHTML = days;
+            document.getElementById("hours").innerHTML = hours;
+            document.getElementById("minutes").innerHTML = minutes;
+            document.getElementById("seconds").innerHTML = seconds;
             //do something 
         } else {
             //display normally

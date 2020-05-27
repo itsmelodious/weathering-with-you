@@ -14,8 +14,12 @@ var x = setInterval(
 
         //display days, hours, minutes, seconds
 
-        if (dif < 0) {
+        if (dif >= 0) {
             //if after the end date
+            index.getElementById("days").innerHTML = days;
+            index.getElementById("hours").innerHTML = hours;
+            index.getElementById("minutes").innerHTML = minutes;
+            index.getElementById("seconds").innerHTML = seconds;
             //do something 
         } else {
             //display normally

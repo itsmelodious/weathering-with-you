@@ -15,10 +15,30 @@ var x = setInterval(
 
         if (dif >= 0) {
             //if after the end date
+            //set number of days
             document.getElementById("days").innerHTML = days;
-            document.getElementById("hours").innerHTML = hours;
-            document.getElementById("minutes").innerHTML = minutes;
-            document.getElementById("seconds").innerHTML = seconds;
+
+            //set number of hours
+            if (hours < 10) {
+                document.getElementById("hours").innerHTML = "0" + hours;
+
+            } else {
+                document.getElementById("hours").innerHTML = hours;
+            }
+            //set number of minutes
+            if (minutes < 10) {
+                document.getElementById("minutes").innerHTML = "0" + minutes;
+
+            } else {
+                document.getElementById("minutes").innerHTML = minutes;
+            }
+
+            if (seconds < 10) {
+                document.getElementById("seconds").innerHTML = "0" + seconds;
+
+            } else {
+                document.getElementById("seconds").innerHTML = seconds;
+            }
             //do something 
         } else {
             //display normally

@@ -21,4 +21,3 @@ var x = setInterval(
             //display normally
         }
     }, 1000);
-)

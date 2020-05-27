@@ -8,21 +8,51 @@ html {
 
 body {
     margin: 0;
+    margin-left: 10%;
+    margin-top: 2%;
 	height: 100%;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'barlow semi condensed', sans-serif;
 	font-weight: 400;
     line-height: 1.5;
     color: white;
 }
 
-.countdown {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: left;
+h1 {
+    font-size: 48pt;
+    text-transform: uppercase;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
-.timer, .countdown-text {
+#description-text {
+    font-size: 16pt;
+    width: 50%;
+}
+
+p.countdown-text {
+    margin: 0;
+}
+
+.timer {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    width: 25%;
+    margin-left: 0px;
+}
+
+.timer-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.countdown-text {
+    display: flex;
+    align-items: flex-start;
+    font-size: 16pt;
+}
+
+.countdown-number {
+    font-size: 36pt;
+    font-weight: 500;
 }

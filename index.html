@@ -5,27 +5,31 @@
     <meta charset="utf-8">
     <title>Weathering With You Countdown</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet"type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="description">
-        <h1>Coming soon</h1>
-        <p>Countdown until the DVD release of Weathering With You.</p>
+        <h1 id="description-header">Coming Soon</h1>
+        <p id="description-text">Countdown until the U.S. DVD release of Weathering With You.</p>
     </div>
-    <div class="countdown">
-        <!-- TODO replace with values from script.js -->
-        <div class="timer">
-            <p id="days">00</p>
-            <p id="hours">00</p>
-            <p id="minutes">00</p>
-            <p id="seconds">00</p>
+    <div class="timer">
+        <div class="timer-section">
+            <p class="countdown-text countdown-number" id="days"></p>
+            <p class="countdown-text">days</p>
         </div>
-        <div class="countdown-text">
-            <p>days</p>
-            <p>hours</p>
-            <p>minutes</p>
-            <p>seconds</p>
+        <div class="timer-section">
+            <p class="countdown-text countdown-number" id="hours"></p>
+            <p class="countdown-text">hours</p>
+        </div>
+        <div class="timer-section">
+            <p class="countdown-text countdown-number"id="minutes"></p>
+            <p class="countdown-text">minutes</p>
+        </div>
+        <div class="timer-section">
+            <p class="countdown-text countdown-number" id="seconds"></p>
+            <p class="countdown-text">seconds</p>
         </div>
     </div>
 

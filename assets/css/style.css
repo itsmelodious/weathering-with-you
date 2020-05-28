@@ -1,5 +1,5 @@
 html {
-    background-image: url("../img/background.jpg");
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/background.jpg");
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -14,7 +14,7 @@ body {
     font-family: 'barlow semi condensed', sans-serif;
 	font-weight: 400;
     line-height: 1.5;
-    color: white;    
+    color: white;
 }
 
 h1 {
@@ -24,23 +24,24 @@ h1 {
     margin-bottom: 0px;
 }
 
+/* .color-overlay {
+    height: 100%;
+    width: 100%;
+    background: black;
+    opacity: 0.3;
+    position: absolute;
+    z-index: -1;
+} */
+
 #description-text {
     font-size: 16pt;
     width: 50%;
 }
 
-.color-overlay {
-    height: 100%;
-    width: 100%;
-    background: black;
-    opacity: 0.3;
-    position: absolute; 
-
-}
-
 #release-date {
     font-size: 16pt;
 }
+
 p.countdown-text {
     margin: 0;
 }

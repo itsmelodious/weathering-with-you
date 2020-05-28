@@ -1,9 +1,10 @@
 html {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/background.jpg");
+    min-height: 100%;
+    background: url("../img/background.jpg") rgba(0, 0, 0, 0.3);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+    background-blend-mode: multiply;
 }
 
 body {
@@ -23,15 +24,6 @@ h1 {
     margin-top: 0px;
     margin-bottom: 0px;
 }
-
-/* .color-overlay {
-    height: 100%;
-    width: 100%;
-    background: black;
-    opacity: 0.3;
-    position: absolute;
-    z-index: -1;
-} */
 
 #description-text {
     font-size: 16pt;

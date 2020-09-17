@@ -10,14 +10,28 @@ var x = setInterval(
         var hours = Math.floor((dif % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         var minutes = Math.floor((dif % (1000 * 60 * 60)) / (1000 * 60));
         var seconds = Math.floor((dif % (1000 * 60)) / 1000);
+        
+        var header = "Coming Soon";
+        var timing = "until";
 
-        // if after the end date, display the days, hours, minutes, seconds without the negative sign
+        // if after the end date
+        // display the days, hours, minutes, seconds without the negative sign
+        // adjust text to reflect past tense
         if (dif <= 0) {
             days *= -1;
             hours *= -1;
             minutes *= -1;
             seconds *= -1;
+            header = "Now Playing";
+            timing = "since";
         }
+        
+        // set header
+        document.getElementById("description-header").innerHTML = header;
+        
+        // set description text
+        var descriptionText = `Countdown ${timing} the U.S. DVD release of Weathering With You.`;
+        document.getElementById("counter-description").innerHTML = descriptionText;
         
         // display days, hours, minutes, seconds
         document.getElementById("days").innerHTML = days;

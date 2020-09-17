@@ -31,7 +31,7 @@ var x = setInterval(
         
         // set description text
         var descriptionText = `Countdown ${timing} the U.S. DVD release of Weathering With You.`;
-        document.getElementById("counter-description").innerHTML = descriptionText;
+        document.getElementById("countdown-description").innerHTML = descriptionText;
         
         // display days, hours, minutes, seconds
         document.getElementById("days").innerHTML = days;

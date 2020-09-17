@@ -11,21 +11,25 @@ var x = setInterval(
         var minutes = Math.floor((dif % (1000 * 60 * 60)) / (1000 * 60));
         var seconds = Math.floor((dif % (1000 * 60)) / 1000);
 
-        //display days, hours, minutes, seconds
+        // display days, hours, minutes, seconds
 
-        if (dif >= 0) {
-            //if after the end date
-            //set number of days
+        if (dif <= 0) {
+            // if after the end date, display the days, hours, minutes, seconds without the negative sign
+            days *= -1;
+            hours *= -1;
+            minutes *= -1;
+            seconds *= -1;
+            
             document.getElementById("days").innerHTML = days;
 
-            //set number of hours
+            // set number of hours
             if (hours < 10) {
                 document.getElementById("hours").innerHTML = "0" + hours;
 
             } else {
                 document.getElementById("hours").innerHTML = hours;
             }
-            //set number of minutes
+            // set number of minutes
             if (minutes < 10) {
                 document.getElementById("minutes").innerHTML = "0" + minutes;
 
@@ -39,7 +43,6 @@ var x = setInterval(
             } else {
                 document.getElementById("seconds").innerHTML = seconds;
             }
-            //do something 
         } else {
             //display normally
         }

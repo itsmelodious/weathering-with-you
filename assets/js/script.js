@@ -58,4 +58,4 @@ function fn() {
     }
 }
 
-setinterval(fn, 1000);
+setInterval(fn, 1000);

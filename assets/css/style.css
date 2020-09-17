@@ -25,7 +25,7 @@ h1 {
     margin-bottom: 0px;
 }
 
-#description-text {
+.description {
     font-size: 16pt;
     width: 50%;
 }

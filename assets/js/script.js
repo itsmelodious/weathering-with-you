@@ -11,39 +11,36 @@ var x = setInterval(
         var minutes = Math.floor((dif % (1000 * 60 * 60)) / (1000 * 60));
         var seconds = Math.floor((dif % (1000 * 60)) / 1000);
 
-        // display days, hours, minutes, seconds
-
+        // if after the end date, display the days, hours, minutes, seconds without the negative sign
         if (dif <= 0) {
-            // if after the end date, display the days, hours, minutes, seconds without the negative sign
             days *= -1;
             hours *= -1;
             minutes *= -1;
             seconds *= -1;
-            
-            document.getElementById("days").innerHTML = days;
+        }
+        
+        // display days, hours, minutes, seconds
+        document.getElementById("days").innerHTML = days;
 
-            // set number of hours
-            if (hours < 10) {
-                document.getElementById("hours").innerHTML = "0" + hours;
+        // set number of hours
+        if (hours < 10) {
+            document.getElementById("hours").innerHTML = "0" + hours;
 
-            } else {
-                document.getElementById("hours").innerHTML = hours;
-            }
-            // set number of minutes
-            if (minutes < 10) {
-                document.getElementById("minutes").innerHTML = "0" + minutes;
-
-            } else {
-                document.getElementById("minutes").innerHTML = minutes;
-            }
-
-            if (seconds < 10) {
-                document.getElementById("seconds").innerHTML = "0" + seconds;
-
-            } else {
-                document.getElementById("seconds").innerHTML = seconds;
-            }
         } else {
-            //display normally
+            document.getElementById("hours").innerHTML = hours;
+        }
+        // set number of minutes
+        if (minutes < 10) {
+            document.getElementById("minutes").innerHTML = "0" + minutes;
+
+        } else {
+            document.getElementById("minutes").innerHTML = minutes;
+        }
+
+        if (seconds < 10) {
+            document.getElementById("seconds").innerHTML = "0" + seconds;
+
+        } else {
+            document.getElementById("seconds").innerHTML = seconds;
         }
     }, 1000);
